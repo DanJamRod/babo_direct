@@ -1,5 +1,5 @@
 # babo_direct
-Demo for MIS3640 group project; clunky code, not how would implement idea, but just playing around
+Demo for MIS3640 group project; clunky code, not how we would implement our idea, but just exploring the feasibility 
 
 ![demo_0](https://github.com/DanJamRod/babo_direct/blob/master/photos/demo_0.jpg)
 ![demo_1](https://github.com/DanJamRod/babo_direct/blob/master/photos/demo_1.jpg)
