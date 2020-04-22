@@ -4,6 +4,8 @@ def directions(start, finish):
     pass
 
 def main():
+    """ use for testing
+    """
     pass
 
 if __name__ == '__main__':
