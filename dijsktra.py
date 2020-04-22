@@ -57,6 +57,8 @@ def route(start, finish):
     return dijsktra(graph, start, finish)    
 
 def main():
+    """ use for testing
+    """
     pass
 
 if __name__ == '__main__':
