@@ -6,7 +6,7 @@ def directions(start, finish):
 def main():
     """ use for testing
     """
-    print(directions("X", "Y"))
+    print(directions("beec", "coleman"))
 
 if __name__ == '__main__':
     main()
