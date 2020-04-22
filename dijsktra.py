@@ -59,7 +59,7 @@ def route(start, finish):
 def main():
     """ use for testing
     """
-    print(route("X", "Y"))
+    print(route("beec", "coleman"))
 
 if __name__ == '__main__':
     main()
