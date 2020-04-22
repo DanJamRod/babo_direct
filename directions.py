@@ -1,12 +1,12 @@
 from dijsktra import route as route
 
 def directions(start, finish):
-    pass
+    return route(start, finish)
 
 def main():
     """ use for testing
     """
-    pass
+    print(directions("X", "Y"))
 
 if __name__ == '__main__':
     main()
