@@ -1,5 +1,5 @@
 from collections import defaultdict
-from edges import edges as edges
+from locations_timings import locations_timings as edges
 
 class Graph():
     def __init__(self):
@@ -41,7 +41,7 @@ def dijsktra(graph, initial, end):
         current_node = min(next_destinations, key=lambda k: next_destinations[k][1])
     
     # Work back through destinations in shortest path
-    path = []
+    path = [weight]
     while current_node is not None:
         path.append(current_node)
         next_node = shortest_paths[current_node][0]
@@ -59,7 +59,7 @@ def route(start, finish):
 def main():
     """ use for testing
     """
-    pass
+    print(route("X", "Y"))
 
 if __name__ == '__main__':
     main()
