@@ -18,3 +18,18 @@ locations_timings = [
     ('J', 'L', 1),
     ('K', 'Y', 5),
 ]
+
+def locations():
+    locations = []
+    for tuple in locations_timings:
+        if tuple[0] not in locations:
+            locations.append(tuple[0])
+        if tuple[1] not in locations:
+            locations.append(tuple[1])
+    return sorted(locations)
+
+def main():
+    print(locations())
+
+if __name__ == '__main__':
+    main()
