@@ -41,7 +41,7 @@ def dijsktra(graph, initial, end):
         current_node = min(next_destinations, key=lambda k: next_destinations[k][1])
     
     # Work back through destinations in shortest path
-    path = [weight]
+    path = [weight//60]
     while current_node is not None:
         path.append(current_node)
         next_node = shortest_paths[current_node][0]
@@ -59,7 +59,9 @@ def route(start, finish):
 def main():
     """ use for testing
     """
-    print(route("beec", "coleman"))
+    # print(route("beec", "coleman"))
+    # print(route("woodland_5", "trim"))
+    print(route("van_winkle", "tomasso"))
 
 if __name__ == '__main__':
     main()
