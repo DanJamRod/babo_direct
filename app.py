@@ -12,4 +12,11 @@ from flask import Flask
 # print(f"\n\n")
 # print(locations_list)
 
+# Testing algorithm
+print(directions("becc", "coleman"))
+print(f"\n")
+print(directions("woodland_10", "trim"))
+print(f"\n")
+print(directions("forest", "tomasso"))
+
 app = Flask(__name__)
