@@ -41,7 +41,7 @@ def dijsktra(graph, initial, end):
         current_node = min(next_destinations, key=lambda k: next_destinations[k][1])
     
     # Work back through destinations in shortest path
-    path = [int(weight/60)]
+    path = [weight//60 + 1]
     while current_node is not None:
         path.append(current_node)
         next_node = shortest_paths[current_node][0]
