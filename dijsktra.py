@@ -54,14 +54,4 @@ def route(start, finish):
     graph = Graph()
     for edge in edges:
         graph.add_edge(*edge)
-    return dijsktra(graph, start, finish)    
-
-def main():
-    """ use for testing
-    """
-    # print(route("beec", "coleman"))
-    # print(route("woodland_5", "trim"))
-    print(route("van_winkle", "tomasso"))
-
-if __name__ == '__main__':
-    main()
+    return dijsktra(graph, start, finish)
