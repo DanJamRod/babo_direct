@@ -1,23 +1,36 @@
-locations_selectable = {
-    "test_no":0,
-    "test_yes":1,
-    "z":1,
-    "a":1
-}
+from locations_name import locations_dict as locations
 
-def locations():
-    return sorted(locations_selectable.keys())
+def all_locations_dict():
+    all_locations_dict = locations()
+    return all_locations_dict
 
-def selectable_locations():
-    selectable_locations = []
-    for location in locations_selectable:
-        if locations_selectable[location] == 1:
-            selectable_locations.append(location)
-    return sorted(selectable_locations)
+def selectable_locations_dict():
+    selectable_locations_dict = locations()
+    paths = []
+    for location in selectable_locations_dict:
+        if location[:4] == "path":
+            paths.append(location)
+    for path in paths:
+        del selectable_locations_dict[path]
+    return selectable_locations_dict
+
+def all_locations_list():
+    all_locations = all_locations_dict()
+    all_locations_list = []
+    for location in all_locations:
+        all_locations_list.append(all_locations[location])
+    return all_locations_list
+
+def selectable_locations_list():
+    selectable_locations = selectable_locations_dict()
+    selectable_locations_list = []
+    for location in selectable_locations:
+        selectable_locations_list.append(selectable_locations[location])
+    return selectable_locations_list
 
 def main():
-    print(f"Locations: {locations()}")
-    print(f"Selectable Locations: {selectable_locations()}")
+    print(f"All Locations:\n{all_locations_list()}\n\n")
+    print(f"Selectable Locations:\n{selectable_locations_list()}")
 
 if __name__ == '__main__':
     main()
