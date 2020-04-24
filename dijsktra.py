@@ -1,3 +1,5 @@
+# Adapted work of https://benalexkeen.com
+
 from collections import defaultdict
 from locations_timings import locations_timings as edges
 
