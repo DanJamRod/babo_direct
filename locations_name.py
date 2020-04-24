@@ -1,4 +1,4 @@
-locations_name = {
+locations_name_dict = {
 "babson_hall":"Babson Hall",
 "babson_lot":"Babson Lot",
 "becc":"Babson Executive Conference Center",
@@ -120,11 +120,14 @@ locations_name = {
 "woodside_lot":"Woodland Lot"
 }
 
+def locations_dict():
+    return locations_name_dict
+
 def locations():
     location_name = []
-    for location in locations_name:
-        if locations_name[location] not in location_name:
-            location_name.append(locations_name[location])
+    for location in locations_name_dict:
+        if locations_name_dict[location] not in location_name:
+            location_name.append(locations_name_dict[location])
     return sorted(location_name)
 
 def main():
