@@ -45,7 +45,7 @@ locations_name_dict = {
 "mattos":"Mattos Hall",
 "mccullough":"McCullough Hall",
 "millea":"Millea Hall",
-"mustard":"Mustard Hall- Admissions",
+"mustard":"Mustard Hall (Admissions)",
 "nichols":"Nichols Building",
 "nichols_lot":"Nichols Lot",
 "olin":"Olin Hall",
@@ -85,7 +85,7 @@ locations_name_dict = {
 "path_vw_hill_top":"the top of Van Winkle Hill",
 "path_webster_stairs":"the stairs outside the Webster Center",
 "pietz":"Pietz Hall",
-"post_office":"Post Office - USPS",
+"post_office":"Post Office (USPS)",
 "public_safety":"Public Safety",
 "putney":"Putney Hall",
 "reynolds":"Reynolds Campus Center",
@@ -117,7 +117,7 @@ locations_name_dict = {
 "woodland_9":"Woodland Building 9",
 "woodland_lot":"Woodland Lot",
 "woodside":"Woodside Hall",
-"woodside_lot":"Woodland Lot"
+"woodside_lot":"Woodside Lot"
 }
 
 def locations_dict():
