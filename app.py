@@ -5,6 +5,12 @@ from locations_selectable import selectable_locations_dict as locations_dict
 from locations_selectable import selectable_locations_list as locations_list
 from flask import Flask
 
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+  return 'hello, world'
+  
 # # Users need to see locations_dict.values() i.e. locations_list, but locations_dict.keys() has to be inputted to the algorithm
 # locations_dict = locations_dict()
 # locations_list = locations_list()
@@ -19,4 +25,4 @@ print(directions("woodland_10", "trim"))
 print(f"\n")
 print(directions("forest", "tomasso"))
 
-app = Flask(__name__)
+
