@@ -5,7 +5,13 @@ from locations_selectable import selectable_locations_dict as locations_dict
 from locations_selectable import selectable_locations_list as locations_list
 from flask import Flask
 
-# # Users need to see locations_dict.values() i.e. locations_list, but locations_dict.keys() has to be inputted to the algorithm
+# Test
+# def index():
+#   return 'hello, world'
+
+# # Users need to see locations_dict.values() i.e. locations_list, 
+# but locations_dict.keys() has to be inputted to the algorithm
+
 # locations_dict = locations_dict()
 # locations_list = locations_list()
 # print(locations_dict)
