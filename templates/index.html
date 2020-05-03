@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+    <body>
 </head>
 <body>
-    <p><image src="static/images/logo.png" alt="BaboDirect Logo" height = "200" width = "200"></p>
-    </h1>Welcome to BaboDirect!<h1></h1>
-    <p>Please select where you want to go from and to:</p>
-    <p>    
+    <header class="w3-container w3-teal w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Welcome to BaboDirect!</h1>
+    <p class="w3-xlarge"><image src="static/images/logo.png" alt="BaboDirect Logo" height = "200" width = "200"></p>
+    <p class="w3-xlarge">Please select where you want to go from and to:</p>
+    <p class="w3-xlarge">    
         <form method='POST' id = "locations">
             <label for="start">Start:</label>
             <select id="start" name="start" form="locations">
@@ -31,8 +42,8 @@
                 <option value="cruikshank">William Cruickshank Alumni Hall</option>
                 <option value="forest">Forest Hall</option>
                 <option value="forest_annex">Forest Hall (Annex)</option>
-                <option value="forest_lot">Forest Lot</option> 
-                <option value="foundry">the Weissman Foundry</option> 
+                <option value="forest_lot">Forest Lot</option>
+                <option value="foundry">(Weissman) Foundry</option> 
                 <option value="foundry_lot">Foundry Lot</option> 
                 <option value="gerber">Gerber Hall</option>
                 <option value="globe">the Globe</option>
@@ -99,8 +110,6 @@
                 <option value="woodside">Woodside Hall</option>
                 <option value="woodside_lot">Woodside Lot</option>
             </select>
-        </p>
-        <p>
             <label for="finish">Finish:</label>
             <select id="finish" name="finish" form="locations">
                 <option value="babson_hall">Babson Hall</option>
@@ -122,7 +131,7 @@
                 <option value="forest">Forest Hall</option>
                 <option value="forest_annex">Forest Hall (Annex)</option>
                 <option value="forest_lot">Forest Lot</option> 
-                <option value="foundry">the Weissman Foundry</option> 
+                <option value="foundry">(Weissman) Foundry</option> 
                 <option value="foundry_lot">Foundry Lot</option> 
                 <option value="gerber">Gerber Hall</option>
                 <option value="globe">the Globe</option>
@@ -191,7 +200,7 @@
             </select>
         </p>
         <p>
-            <input type='submit' value='Submit'/>
+            <input class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type='submit' value='Submit'/>
         </p>
     </form>
 
