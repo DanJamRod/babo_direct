@@ -21,6 +21,6 @@ def index():
 def directions():
     try:
         text = babo_direct(session["start"],session["finish"])
-        return render_template("directions.html", text = text)
+        return render_template("directions.html", text = text[:-1], time = text[-1], start = session["start"], finish =session["finish"])
     except:
         return render_template('error.html')
