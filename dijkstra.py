@@ -182,5 +182,5 @@ def babson_graph():
 def route(start, finish):
     G = babson_graph()
     directions = nx.shortest_path(G, source=start, target=finish, weight='weight', method='dijkstra')
-    directions.append(nx.shortest_path_length(G, source=start, target=finish, weight='weight', method='dijkstra'))
+    directions.append((nx.shortest_path_length(G, source=start, target=finish, weight='weight', method='dijkstra'))//60 + 1)
     return directions
