@@ -6,6 +6,14 @@
     <title>Directions</title>
 </head>
 <body>
-    <p>	Follow the directions: {{text}} </p>
+    <p> The journey between {{start}} and {{finish}} should take around {{time}} minutes </p>
+    <p>	Follow these directions: </p>
+    <p>
+        <ul>
+        {% for directions in text %}
+          <li>{{ directions }}</li>
+        {% endfor %}  
+        </ul>
+    </p>
 </body>
 </html>
