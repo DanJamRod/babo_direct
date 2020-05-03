@@ -6,11 +6,11 @@
     <title>Directions</title>
 </head>
 <body>
-    <form method="POST">
+    <form method="POST" id="select">
         <p>Welcome to Babson!</p>
     
         <label for="input">Choose Your Starting Point:</label>
-        <select id="starting" type='text'>
+        <select id="starting" type="text" form="select">
             <option value="babson_hall">Babson Hall</option>
             <option value="babson_lot">Babson Lot</option>
             <option value="becc">Babson Executive Conference Center</option>
@@ -101,7 +101,7 @@
         <br><p>
 
         <label for="ouput">Choose Your Destination:</label>
-        <select id="destination" type='text'>
+        <select id="destination" type="text" form="select">
             <option value="babson_hall">Babson Hall</option>
             <option value="babson_lot">Babson Lot</option>
             <option value="becc">Babson Executive Conference Center</option>
