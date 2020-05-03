@@ -6,11 +6,11 @@
     <title>Directions</title>
 </head>
 <body>
-    <form method="post">
+    <form method="POST">
         <p>Welcome to Babson!</p>
     
-        <label for="starting">Choose Your Starting Point:</label>
-        <select id="location_name">
+        <label for="input">Choose Your Starting Point:</label>
+        <select id="starting" type='text'>
             <option value="babson_hall">Babson Hall</option>
             <option value="babson_lot">Babson Lot</option>
             <option value="becc">Babson Executive Conference Center</option>
@@ -20,7 +20,7 @@
             <option value="bryant">Bryant Hall</option> 
             <option value="bryant_lot">Bryant Lot</option>
             <option value="bsc">Boston Sports Club</option>
-            <option value="canfield">Canfield Hall"</option>
+            <option value="canfield">Canfield Hall</option>
             <option value="central_services">Central Services</option>
             <option value="chapel">Glavin Family Chapel</option> 
             <option value="coleman">Coleman Hall</option> 
@@ -34,7 +34,7 @@
             <option value="foundry_lot">Foundry Lot</option> 
             <option value="gerber">Gerber Hall</option>
             <option value="globe">the Globe</option>
-            <option value="hartwell_rogers_field">Hartwell Rogers Field"</option>
+            <option value="hartwell_rogers_field">Hartwell Rogers Field</option>
             <option value="hollister">Hollister Hall</option>
             <option value="hollister_lot">Hollister Lot</option> 
             <option value="horn">Horn Library</option> 
@@ -49,7 +49,7 @@
             <option value="macdowell_field">MacDowell Field</option> 
             <option value="malloy">Malloy Hall</option>
             <option value="mandell">Mandell Family Hall</option>
-            <option value="manor_central">Park Manor Central"</option>
+            <option value="manor_central">Park Manor Central</option>
             <option value="manor_north">Park Manor North</option>
             <option value="manor_quad">Park Manor Quad</option> 
             <option value="manor_south">Park Manor South</option> 
@@ -62,20 +62,6 @@
             <option value="nichols_lot">Nichols Lot</option> 
             <option value="olin">Olin Hall</option> 
             <option value="olin_lot">Olin Lot</option>
-            <option value="path_bryant_way">Bryant Way</option> 
-            <option value="path_fields_bryant">the path from the fields to Bryant Way</option>
-            <option value="path_fields_seating">fields' spectator seating</option> 
-            <option value="path_fields_side">the path behind the softball field</option>
-            <option value="path_keith_canfield">the path between Kieth Hall and Canfield Hall</option>
-            <option value="path_mustard_blank">the path between the Blank Center and Mustard Hall</option> 
-            <option value="path_olin_knight">the path between Olin Hall and Knight Auditorium</option>
-            <option value="path_pietz_mccullough">the path between Pietz Hall and McCullough Hall</option>
-            <option value="path_reynolds_canfield">the path between Reynolds Center and Canfield Hall</option>
-            <option value="path_sullivan">Sullivan Road</option> 
-            <option value="path_tomasso_lawn">the Tomasso lawn</option>
-            <option value="path_vw_hill_bottom">the bottom of Van Winkle Hill</option>
-            <option value="path_vw_hill_top">the top of Van Winkle Hill</option>
-            <option value="path_webster_stairs">the stairs outside the Webster Center</option>
             <option value="pietz">Pietz Hall</option> 
             <option value="post_office">Post Office (USPS)</option>
             <option value="public_safety">Public Safety</option>
@@ -114,8 +100,8 @@
         
         <br><p>
 
-        <label for="destination">Choose Your Destination:</label>
-        <select id="location_name">
+        <label for="ouput">Choose Your Destination:</label>
+        <select id="destination" type='text'>
             <option value="babson_hall">Babson Hall</option>
             <option value="babson_lot">Babson Lot</option>
             <option value="becc">Babson Executive Conference Center</option>
@@ -125,7 +111,7 @@
             <option value="bryant">Bryant Hall</option> 
             <option value="bryant_lot">Bryant Lot</option>
             <option value="bsc">Boston Sports Club</option>
-            <option value="canfield">Canfield Hall"</option>
+            <option value="canfield">Canfield Hall</option>
             <option value="central_services">Central Services</option>
             <option value="chapel">Glavin Family Chapel</option> 
             <option value="coleman">Coleman Hall</option> 
@@ -139,7 +125,7 @@
             <option value="foundry_lot">Foundry Lot</option> 
             <option value="gerber">Gerber Hall</option>
             <option value="globe">the Globe</option>
-            <option value="hartwell_rogers_field">Hartwell Rogers Field"</option>
+            <option value="hartwell_rogers_field">Hartwell Rogers Field</option>
             <option value="hollister">Hollister Hall</option>
             <option value="hollister_lot">Hollister Lot</option> 
             <option value="horn">Horn Library</option> 
@@ -154,7 +140,7 @@
             <option value="macdowell_field">MacDowell Field</option> 
             <option value="malloy">Malloy Hall</option>
             <option value="mandell">Mandell Family Hall</option>
-            <option value="manor_central">Park Manor Central"</option>
+            <option value="manor_central">Park Manor Central</option>
             <option value="manor_north">Park Manor North</option>
             <option value="manor_quad">Park Manor Quad</option> 
             <option value="manor_south">Park Manor South</option> 
@@ -162,25 +148,11 @@
             <option value="mattos">Mattos Hall</option>
             <option value="mccullough">McCullough Hall</option>
             <option value="millea">Millea Hall</option>
-            <option value="mustard">Mustard Hall (Admissions</option>
+            <option value="mustard">Mustard Hall (Admissions)</option>
             <option value="nichols">Nichols Building</option> 
             <option value="nichols_lot">Nichols Lot</option> 
             <option value="olin">Olin Hall</option> 
             <option value="olin_lot">Olin Lot</option>
-            <option value="path_bryant_way">Bryant Way</option> 
-            <option value="path_fields_bryant">the path from the fields to Bryant Way</option>
-            <option value="path_fields_seating">fields' spectator seating</option> 
-            <option value="path_fields_side">the path behind the softball field</option>
-            <option value="path_keith_canfield">the path between Kieth Hall and Canfield Hall</option>
-            <option value="path_mustard_blank">the path between the Blank Center and Mustard Hall</option> 
-            <option value="path_olin_knight">the path between Olin Hall and Knight Auditorium</option>
-            <option value="path_pietz_mccullough">the path between Pietz Hall and McCullough Hall</option>
-            <option value="path_reynolds_canfield">the path between Reynolds Center and Canfield Hall</option>
-            <option value="path_sullivan">Sullivan Road</option> 
-            <option value="path_tomasso_lawn">the Tomasso lawn</option>
-            <option value="path_vw_hill_bottom">the bottom of Van Winkle Hill</option>
-            <option value="path_vw_hill_top">the top of Van Winkle Hill</option>
-            <option value="path_webster_stairs">the stairs outside the Webster Center</option>
             <option value="pietz">Pietz Hall</option> 
             <option value="post_office">Post Office (USPS)</option>
             <option value="public_safety">Public Safety</option>
@@ -216,6 +188,7 @@
             <option value="woodside">Woodside Hall</option>
             <option value="woodside_lot">Woodside Lot</option>                   
         </select>
+        <p><input type='submit' value='Submit'/></p>
     </form>
 </body>
 </html>
