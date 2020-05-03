@@ -12,5 +12,5 @@ def directions(start, finish):
         elif path[i+1][:4] != "path": 
             directions.append(f"Walk past {name[path[i+1]]}")
     directions.append(f"You are at {name[finish]}!")
-    directions.append(f"This journey should talk around {path[-1]} minutes")
+    directions.append(f"This journey should take around {path[-1]} minutes")
     return directions
