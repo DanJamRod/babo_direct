@@ -1,13 +1,12 @@
 # export FLASK_APP=app.py && python3 -m flask run
 
 from directions import directions as babo_direct
-from locations_selectable import selectable_locations_dict as locations_dict
 from locations_selectable import selectable_locations_list as locations_list
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
 
-app.secret_key = "SuperSecretKey" # Secret Key required for session["place"] to store info
+app.secret_key = "SuperSecretKey" # Secret Key required for session["start"] to store info
 
 @app.route('/',methods=['POST','GET'])
 def index():
