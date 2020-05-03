@@ -28,11 +28,6 @@ def selectable_locations_list():
         selectable_locations_list.append(selectable_locations[location])
     return selectable_locations_list
 
-def translate(location):
-    selectable_locations = selectable_locations_dict()
-    translate_locations = dict([(value, key) for key, value in selectable_locations.items()])
-    return translate_locations[location]
-
 def main():
     print(f"All Locations:\n{all_locations_list()}\n\n")
     print(f"Selectable Locations:\n{selectable_locations_list()}")
