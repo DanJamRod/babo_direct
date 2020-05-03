@@ -1,4 +1,4 @@
-from dijsktra import route as route
+from dijkstra import route as route
 from locations_name import locations_dict as locations_name
 
 def directions(start, finish):
