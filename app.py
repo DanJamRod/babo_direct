@@ -1,7 +1,6 @@
 # export FLASK_APP=app.py && python3 -m flask run
 
 from directions import directions as babo_direct
-from locations_selectable import selectable_locations_list as locations_list
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
