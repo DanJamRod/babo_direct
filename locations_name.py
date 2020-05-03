@@ -121,9 +121,13 @@ locations_name_dict = {
 }
 
 def locations_dict():
+    """ Returns a dictionary containing {code_location: Nicely Written Location}
+    """
     return locations_name_dict
 
 def locations():
+    """ Returns a list of locations (all the values from locations_dict)
+    """
     location_name = []
     for location in locations_name_dict:
         if locations_name_dict[location] not in location_name:
