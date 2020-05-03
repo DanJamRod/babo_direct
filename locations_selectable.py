@@ -30,8 +30,8 @@ def all_locations_list():
     return all_locations_list
 
 def selectable_locations_list():
-        """ Returns a list of all non-path locations (the values from the selectable_locations_dict)
-        """
+    """ Returns a list of all non-path locations (the values from the selectable_locations_dict)
+    """
     selectable_locations = selectable_locations_dict()
     selectable_locations_list = []
     for location in selectable_locations:
