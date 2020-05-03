@@ -1,7 +1,11 @@
-# pip install networkx
 import networkx as nx
 
 def babson_graph():
+    """ Creates graph in networkx, adds non-directional edges to it, and then returns the graph. 
+        Weight is time in seconds between the nodes.
+        One real-life roads may be represented by multiple nodes, e.g. path_map_hill_1 and path_map_hill_2.
+        Map can be viewed at map.png
+    """
     G = nx.Graph()
     G.add_edge("skating_lot", "skating_rink", weight = 30)
     G.add_edge("skating_rink", "bsc", weight = 30)
@@ -180,7 +184,10 @@ def babson_graph():
     return G
 
 def route(start, finish):
+    """ Calculates fastest route between a start and end node in a graph,
+    returns the nodes passes, and appended on the end is the time taken in minutes.
+    """
     G = babson_graph()
     directions = nx.shortest_path(G, source=start, target=finish, weight='weight', method='dijkstra')
-    directions.append((nx.shortest_path_length(G, source=start, target=finish, weight='weight', method='dijkstra'))//60 + 1)
+    directions.append((nx.shortest_path_length(G, source=start, target=finish, weight='weight', method='dijkstra'))//60 + 1) # //60+1 translates the minutes into seconds, then rounds up
     return directions
