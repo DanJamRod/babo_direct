@@ -21,12 +21,13 @@
     <h1 class="w3-margin w3-jumbo">Directions</h1>
     <p class="w3-xlarge"> This journey should take around {{time}} minutes: </p>
     <p class="w3-xlarge">
-        <ul list-style=none padding-left=0>
+        <ul class="w3-ul w3-card-4">
         {% for directions in text %}
           <li class="w3-xlarge">{{ directions }}</li>
         {% endfor %}  
         </ul>
     </p>
+    <p class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="{{ url_for('index') }}">Search Again</a></p>
     <h1 class="w3-margin w3-jumbo">	Thank you for using BaboDirect! </p>
 </body>
 </html>
