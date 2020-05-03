@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directions</title>
+    <title>Home</title>
 </head>
 <body>
-    <form method="POST">
-        <p>Welcome to Babson!</p>
-    
-        <label for="input">Choose Your Starting Point:</label>
-        <select id="starting" type='text'>
+    </h1>Title<h1></h1>
+    <p>Test</p>
+    <form method='POST' id = "locations">
+        <label for="start">Start:</label>
+        <select id="start" name="start" form="locations">
             <option value="babson_hall">Babson Hall</option>
             <option value="babson_lot">Babson Lot</option>
             <option value="becc">Babson Executive Conference Center</option>
@@ -97,11 +97,8 @@
             <option value="woodside">Woodside Hall</option>
             <option value="woodside_lot">Woodside Lot</option>
         </select>
-        
-        <br><p>
-
-        <label for="ouput">Choose Your Destination:</label>
-        <select id="destination" type='text'>
+        <label for="finish">Finish:</label>
+        <select id="finish" name="finish" form="locations">
             <option value="babson_hall">Babson Hall</option>
             <option value="babson_lot">Babson Lot</option>
             <option value="becc">Babson Executive Conference Center</option>
@@ -148,7 +145,7 @@
             <option value="mattos">Mattos Hall</option>
             <option value="mccullough">McCullough Hall</option>
             <option value="millea">Millea Hall</option>
-            <option value="mustard">Mustard Hall (Admissions)</option>
+            <option value="mustard">Mustard Hall (Admissions</option>
             <option value="nichols">Nichols Building</option> 
             <option value="nichols_lot">Nichols Lot</option> 
             <option value="olin">Olin Hall</option> 
@@ -186,9 +183,10 @@
             <option value="woodland_9">Woodland Building 9</option>
             <option value="woodland_lot">Woodland Lot</option>
             <option value="woodside">Woodside Hall</option>
-            <option value="woodside_lot">Woodside Lot</option>                   
+            <option value="woodside_lot">Woodside Lot</option>
         </select>
         <p><input type='submit' value='Submit'/></p>
     </form>
+
 </body>
 </html>
