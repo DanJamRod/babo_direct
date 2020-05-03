@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directions</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+    <body>
 </head>
 <body>
-    <p><image src="static/images/logo.png" alt="BaboDirect Logo" height = "200" width = "200"></p>
-    <p> This journey should take around {{time}} minutes. </p>
-    <p>	Follow these directions: </p>
-    <p>
-        <ul>
+    <header class="w3-container w3-teal w3-center" style="padding:128px 16px">
+    <p class="w3-xlarge"><image src="static/images/logo.png" alt="BaboDirect Logo" height = "200" width = "200"></p>
+    <h1 class="w3-margin w3-jumbo">Directions</h1>
+    <p class="w3-xlarge"> This journey should take around {{time}} minutes: </p>
+    <p class="w3-xlarge">
+        <ul list-style=none padding-left=0>
         {% for directions in text %}
-          <li>{{ directions }}</li>
+          <li class="w3-xlarge">{{ directions }}</li>
         {% endfor %}  
         </ul>
     </p>
-    <p>	Thank you for using BaboDirect! </p>
+    <h1 class="w3-margin w3-jumbo">	Thank you for using BaboDirect! </p>
 </body>
 </html>
