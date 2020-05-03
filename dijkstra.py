@@ -9,6 +9,7 @@ def babson_graph():
     G = nx.Graph()
     G.add_edge("skating_lot", "skating_rink", weight = 30)
     G.add_edge("skating_rink", "bsc", weight = 30)
+    G.add_edge("bsc", "path_fields_side", weight = 30)
     G.add_edge("path_fields_side", "becc", weight = 120)
     G.add_edge("path_fields_bryant", "macdowell_field", weight = 45)
     G.add_edge("path_fields_bryant", "hartwell_rogers_field", weight = 45)
