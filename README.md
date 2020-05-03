@@ -1,1 +1,1 @@
-Please view our application at: https://babodirect.herokuapp.com/
+Please view our application at: https://babodirect.herokuapp.com
