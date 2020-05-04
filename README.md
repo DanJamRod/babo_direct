@@ -1,4 +1,4 @@
-A WebApp to view directions between two locations on campus <br/>
+A WebApp to view directions between two locations on Babson College campus <br/>
 Please use our application at: https://babodirect.herokuapp.com <br/>
 <br/>
 Requirements to run locally:<br/>
